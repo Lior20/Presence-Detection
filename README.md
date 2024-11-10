@@ -1,9 +1,9 @@
-# ArduCAM Image Processing System
+# ArduCAM Image Processing System 📸
 
-## Overview
+## Overview 🔎
 This project implements an embedded image capture and processing system using ArduCAM with FreeRTOS. The system captures images through an OV2640 camera module, processes them in real-time, and can perform inference using a MobileNet model.
 
-## Features
+## Features ⭐
 - Real-time image capture using OV2640 camera module
 - Multi-threaded processing using FreeRTOS
 - Support for both RAW and JPEG image formats
@@ -13,13 +13,13 @@ This project implements an embedded image capture and processing system using Ar
 - SPI and I2C communication interfaces
 - UART debugging output
 
-## Hardware Requirements
+## Hardware Requirements 🛠️
 - Texas Instruments microcontroller (CC27XX series)
 - ArduCAM with OV2640 sensor
 - SPI and I2C interfaces
 - UART interface for debugging
 
-## Software Dependencies
+## Software Dependencies 💻
 - FreeRTOS
 - TI-RTOS Drivers
   - GPIO
@@ -29,7 +29,7 @@ This project implements an embedded image capture and processing system using Ar
   - Power Management
 - MobileNet inference library
 
-## Project Structure
+## Project Structure 📁
 ```
 ├── main_freertos.c      # Main application entry point and thread creation
 ├── spimaster.c          # SPI communication and thread implementation
@@ -37,7 +37,7 @@ This project implements an embedded image capture and processing system using Ar
 └── memorysaver.h       # Memory configuration for camera
 ```
 
-## Key Components
+## Key Components 🔑
 1. **Thread Management**
    - SPI Thread: Handles image capture and data transfer
    - Inference Thread: Processes captured images
@@ -55,7 +55,7 @@ This project implements an embedded image capture and processing system using Ar
    - MobileNet inference
    - Real-time processing
 
-## Setup and Configuration
+## Setup and Configuration ⚙️
 
 ### Hardware Setup
 1. Connect the ArduCAM to your TI microcontroller:
@@ -80,7 +80,7 @@ This project implements an embedded image capture and processing system using Ar
    #define EFF_COLS     (224)
    ```
 
-## Usage
+## Usage 🚀
 
 ### Initialization
 ```c
@@ -108,20 +108,20 @@ while (!Arducam_image_ready()) {
 Arducam_read_image();
 ```
 
-## Debug Output
+## Debug Output 🐛
 The system provides debugging information through UART with a baud rate of 115200. This includes:
 - Camera initialization status
 - Image capture events
 - Processing pipeline status
 - Error messages
 
-## Performance Considerations
+## Performance Considerations ⚡
 - Image processing is performed in real-time
 - Thread priorities are configured for optimal performance
 - Memory management uses efficient buffer handling
 - Power management features are implemented for better efficiency
 
-## Troubleshooting
+## Troubleshooting 🔧
 
 ### Common Issues
 1. SPI Communication Errors
@@ -139,15 +139,15 @@ The system provides debugging information through UART with a baud rate of 11520
    - Check RGB conversion settings
    - Verify resolution configuration
 
-## Future Improvements
+## Future Improvements 🔮
 1. Add support for additional camera modules
 2. Implement more image processing features
 3. Optimize memory usage
 4. Add error recovery mechanisms
 5. Enhance debugging capabilities
 
-## Contributing
+## Contributing 🤝
 Please submit bug reports, feature requests, and pull requests through the project repository.
 
-## License
+## License ⚖️
 This project includes components with various licenses. Please refer to individual source files for specific license information.
