@@ -3,7 +3,7 @@
 ## Overview 🔎
 This project implements an embedded image capture and processing system using ArduCAM with FreeRTOS. The system captures images through an OV2640 camera module, processes them in real-time, and can perform inference using a MobileNet model.
 
-The goal of this project is to create an accelerated AI performance on ARM Cortex M-33 chips, enabling efficient person detection for Texas Instruments devices. Achieved 5x speedup in processing time and frames per second while maintaining memory usage, demonstrating significant improvements for embedded AI applications.
+The goal of this project is to accelerate AI performance on ARM Cortex M-33 chips, enabling efficient person detection for Texas Instruments devices. Achieved 5x speedup in processing time and frames per second while maintaining memory usage, demonstrating significant improvements for embedded AI applications.
 
 ## Features ⭐
 - Real-time image capture using OV2640 camera module
